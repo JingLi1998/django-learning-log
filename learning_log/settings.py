@@ -40,7 +40,7 @@ cwd = os.getcwd()
 if cwd == '/app' or cwd[:4] == '/tmp':
     import dj_database_url
     DATABASES = {
-        'default': 'default': dj_database_url.config()
+        'default': dj_database_url.config(),
     }
 
     # Honour the 'X-Forwarded-Proto' header for request.is_secure()
